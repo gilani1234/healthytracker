@@ -1,0 +1,126 @@
+{
+  "menu": {
+    "home": "Home",
+    "statistics": "Statistics",
+    "digest": "Digest",
+    "calculation": "Calculator",
+    "water": "Water",
+    "badHabits": "Bad Habits"
+  },
+  "home": {
+    "title": "Nutrition Diary",
+    "subtitle": "Build your perfect diet for today",
+    "description": "Track calories and macros at every meal and keep your goal under control.",
+    "selectDate": "Select date",
+    "daySummary": "Daily Summary",
+    "meals": "Meals",
+    "summary": "Summary",
+    "calories": "Calories",
+    "proteins": "Proteins",
+    "fats": "Fats",
+    "carbs": "Carbs",
+    "remaining": "Remaining calories",
+    "consumed": "Consumed calories",
+    "percent": "% of daily intake",
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner"
+  },
+  "calculation": {
+    "title": "Daily Calorie Requirement Calculator",
+    "age": "Age, years",
+    "weight": "Weight, kg",
+    "height": "Height, cm",
+    "sex": "Sex",
+    "male": "Male",
+    "female": "Female",
+    "activity": "Physical activity",
+    "minimal": "Minimal",
+    "light": "Light",
+    "moderate": "Moderate",
+    "heavy": "Heavy or labor-intensive",
+    "extreme": "Extreme",
+    "calculate": "Calculate",
+    "result": "Your daily calorie intake - {value}"
+  },
+  "water": {
+    "title": "Water Tracker",
+    "selectDate": "Select date",
+    "dailyGoal": "Daily goal",
+    "drunk": "Drunk",
+    "remaining": "Remaining",
+    "goal": "Goal",
+    "glasses": "Glasses",
+    "quickAdd": "Quick add",
+    "custom": "Custom amount",
+    "customPlaceholder": "Enter amount",
+    "add": "Add",
+    "history": "History",
+    "delete": "Delete",
+    "selectDatePrompt": "Select date"
+  },
+  "statistics": {
+    "title": "Statistics",
+    "calories": "Calories",
+    "water": "Water",
+    "selectDates": "Select date range"
+  },
+  "digest": {
+    "title": "Digest",
+    "search": "Search digest",
+    "add": "Add",
+    "name": "Name",
+    "calories": "Calories",
+    "proteins": "Proteins",
+    "proteinsGram": "Proteins, g",
+    "fats": "Fats",
+    "fatsGram": "Fats, g",
+    "carbs": "Carbs",
+    "carbsGram": "Carbs, g",
+    "food": "Food"
+  },
+  "common": {
+    "add": "Add",
+    "back": "Back"
+  },
+  "badHabits": {
+    "selectHabit": "Select habit",
+    "active": "Active",
+    "customHabit": "Custom habit",
+    "createCustom": "Create your habit",
+    "change": "Change",
+    "delete": "Delete",
+    "timer": "Timer",
+    "days": "days",
+    "hours": "hours",
+    "minutes": "minutes",
+    "seconds": "seconds",
+    "resetTimer": "Reset timer",
+    "relapsed": "Relapsed",
+    "streak": "Streak",
+    "totalDays": "Total days",
+    "habitName": "Habit name",
+    "habitDescription": "Description",
+    "habitIcon": "Icon",
+    "habitColor": "Color",
+    "resetConfirm": "Are you sure you want to reset the timer?",
+    "relapsedConfirm": "Are you sure you want to mark this day as a relapse? The timer will be reset.",
+    "deleteConfirm": "Are you sure you want to delete this habit? All data will be lost.",
+    "cancel": "Cancel"
+  },
+  "habits": {
+    "alcohol": {
+      "title": "Alcohol",
+      "description": "Beer, wine, spirits"
+    },
+    "smoking": {
+      "title": "Smoking",
+      "description": "Cigarettes, vape, hookah"
+    },
+    "fastFood": {
+      "title": "Fast Food",
+      "description": "Hamburgers, french fries, pizza"
+    }
+  }
+}
+
