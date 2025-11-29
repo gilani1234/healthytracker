@@ -181,7 +181,7 @@
 
     .nutrition__grid {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns: 1.5fr 2fr 1.5fr;
         gap: 24px;
         align-items: start;
     }

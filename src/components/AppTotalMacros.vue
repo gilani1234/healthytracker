@@ -23,13 +23,11 @@
     .total {
         display: flex;
         flex-wrap: wrap;
+        gap: 16px;
     }
 
     .total__item {
-        min-width: 100px;
-
-        &:not(:last-child) {
-            margin-right: 15px;
-        }
+        flex: 1;
+        min-width: 120px;
     }
 </style>

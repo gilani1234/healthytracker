@@ -2,7 +2,7 @@
   import "ant-design-vue/dist/antd.css"
   import db from '.././db.json'
   import {RouterView, RouterLink, useRoute} from 'vue-router'
-  import { ref, computed, watch } from 'vue'
+  import { ref, computed } from 'vue'
   import { useProductsStore } from './store/products'
   import { useI18nStore } from './store/i18n'
   import journalIcon from './assets/icons/journal.png'
@@ -27,7 +27,7 @@
     '/digest': '3',
     '/calculation': '4',
     '/water': '5',
-    '/bad-habits': '6'
+    '/habits': '6'
   }
 
   const selectedPage = computed({
@@ -36,7 +36,6 @@
   })
 
   const showMoreMenu = ref(false)
-
 </script>
 
 <template>
@@ -47,17 +46,6 @@
         <div class="layout__logo">
           <img :src="favicon" alt="Логотип" class="logo-img" />
           <span class="logo-text">HealthyTracker</span>
-        </div>
-        <!-- Переключатель языка -->
-        <div class="layout__controls">
-          <a-button 
-            type="text" 
-            class="control-btn"
-            @click="i18nStore.toggleLocale()"
-            :title="i18nStore.locale === 'ru' ? 'Switch to English' : 'Переключить на русский'"
-          >
-            {{ i18nStore.locale === 'ru' ? 'EN' : 'RU' }}
-          </a-button>
         </div>
         <!-- Главное меню -->
         <a-menu
@@ -86,9 +74,9 @@
             </router-link>
           </a-menu-item>
           <a-menu-item key="6">
-            <router-link to="/bad-habits" class="menu-item-link">
+            <router-link to="/habits" class="menu-item-link">
               <span class="menu-icon-emoji">🚫</span>
-              <span>{{ t('menu.badHabits') }}</span>
+              <span>{{ t('menu.habits') }}</span>
             </router-link>
           </a-menu-item>
           <!-- Выпадающее меню с дополнительными разделами -->
@@ -165,7 +153,6 @@
     gap: 12px;
     margin-right: 40px;
   }
-
 
 
   .logo-img {
@@ -282,29 +269,6 @@
     transform: translateX(4px);
   }
 
-  .layout__controls {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-left: 20px;
-  }
-
-  .control-btn {
-    color: #fff !important;
-    border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    border-radius: 6px;
-    padding: 4px 12px;
-    height: 32px;
-    transition: all 0.3s ease;
-    font-weight: 500;
-  }
-
-  .control-btn:hover {
-    background: rgba(255, 255, 255, 0.15) !important;
-    border-color: rgba(255, 255, 255, 0.5) !important;
-    transform: translateY(-2px);
-  }
-
   .layout__content {
     max-width: 1200px;
     width: 100%;
@@ -324,6 +288,7 @@
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.5);
     animation: slideUp 0.4s ease-out;
+    overflow: visible;
   }
 
   @keyframes slideUp {

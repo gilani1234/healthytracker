@@ -2,9 +2,10 @@
     import { computed, reactive, onMounted } from 'vue'
     import { useCalculationStore } from '../store/calculation'
     import { useI18nStore } from '../store/i18n'
+    import { storeToRefs } from 'pinia'
     
     const calculationStore = useCalculationStore()
-    const { personalData } = calculationStore
+    const { personalData } = storeToRefs(calculationStore)
     const { calculateDailyIntake, updatePersonalData } = calculationStore
     const i18nStore = useI18nStore()
     const t = i18nStore.t

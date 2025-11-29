@@ -2,8 +2,10 @@
     import AppCalculationForm from '../components/AppCalculationForm.vue'
     import { useCalculationStore } from '../store/calculation'
     import { useI18nStore } from '../store/i18n'
+    import { storeToRefs } from 'pinia'
 
-    const { personalData } = useCalculationStore()
+    const calculationStore = useCalculationStore()
+    const { personalData } = storeToRefs(calculationStore)
     const i18nStore = useI18nStore()
     const t = i18nStore.t
 </script>
